@@ -1,0 +1,19 @@
+# Systemd service template for Node.js apps in LXC
+# Copy to /etc/systemd/system/your-app.service
+
+[Unit]
+Description=Your App Name
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/your-app
+ExecStart=/usr/bin/node server.mjs
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=PORT=3000
+
+[Install]
+WantedBy=multi-user.target
