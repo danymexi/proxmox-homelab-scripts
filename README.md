@@ -2,7 +2,7 @@
 
 Automation scripts and configs for setting up and managing a Proxmox VE home lab. Includes LXC container provisioning, Cloudflare tunnel setup, Ollama AI stack deployment, and automated backups.
 
-Battle-tested on a real home lab running 7 LXC containers serving production websites, AI inference, and home automation.
+Battle-tested on a real home lab running 11 LXC containers and a Home Assistant VM: production websites, AI inference, analytics, photos and home automation.
 
 ## What's Inside
 
